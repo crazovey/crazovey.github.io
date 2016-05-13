@@ -7,21 +7,5 @@
   - name: 1.jpg
   - name: 2.jpg
   - name: 3.jpg
-- id: gallery02
-  description: This is the first gallery
-  imagefolder: /gallery/gallery02/
-  cover:
-  - name: bg2.jpg
-  images:
-  - name: bg1.jpg
-  - name: bg2.jpg
-  - name: bg3.jpg
-- id: gallery03
-  description: This is the first gallery
-  imagefolder: /gallery/gallery02/
-  cover:
-  - name: bg3.jpg
-  images:
-  - name: bg1.jpg
-  - name: bg2.jpg
-  - name: bg3.jpg
+  - name: 4.jpg  
+  - name: 5.jpg
