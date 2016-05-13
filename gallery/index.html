@@ -1,0 +1,24 @@
+---
+layout: gallery
+---
+
+	<br><br>
+
+		{% for gallery in site.data.galleries %}
+		{% for image in gallery.cover %}
+			<figure class="gallery-item">
+				<figure class="effect-selena">
+					<header class='gallery-icon'>
+						<a href="{{ gallery.imagefolder }}">
+							<img src="{{ gallery.imagefolder }}{{ image.name }}"/>
+						</a>
+					</header>
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary">
+							<h3>{{ gallery.description }}</h3>
+						</div>
+					</figcaption>
+				</figure>
+			</figure>
+		{% endfor %}
+		{% endfor %}

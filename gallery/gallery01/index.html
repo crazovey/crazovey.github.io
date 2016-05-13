@@ -1,0 +1,19 @@
+---
+layout: gallery
+id: gallery01
+description: "Flora sin fauna"
+---
+
+{% for gallery in site.data.galleries %}
+{% if gallery.id == page.id %}
+{% for image in gallery.images %}
+<figure class="gallery-item">
+	<header class='gallery-icon'>
+		<a href="{{ site.baseurl }}{{ image.path }}{{ image.name }}" class="popup">
+			<img src="{{ site.baseurl }}{{ image.path }}{{ image.name }}" style="cursor: default;" />
+		</a>
+	</header>
+</figure>
+{% endfor %}
+{% endif %}
+{% endfor %}

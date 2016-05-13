@@ -1,0 +1,36 @@
+### Site info:
+title: Crazovey
+tagline: Moonwalker a pie de luna
+author: Crazovey
+email: crazovey@gmail.com
+description: "Moonwalker a pie de luna" # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
+keywords: "Crazovey, poesía, literatura"
+baseurl: ""# the subpath of your site, e.g. /blog
+url: "http://crazovey.github.io" # the base hostname & protocol for your site
+locale: es_ES
+
+### Personal info and site tools info:
+twitter_username: crazovey
+instagram_username: crazovey
+youtube_username: UCkY7itvdg-yqNnyDRXmdH9g
+twitter_username: crazovey
+disqus_shortname: crazovey
+favicon:     "/images/favicon.ico"
+aboutme: Traficante de palabras. Filóloga enamorada de la vida, soñadora, entusiasta, positiva, alocadamente expresiva. # these are shown on aboutme-sidebar.
+aboutme_photo: "/images/gato.jpg" # your photo.
+
+### Site setting:
+ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown when ShowContactInfo == True
+default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
+default_locale: "en" # blog sidebar language set, only include: English(en) and Chinese (cn)
+
+### your Blogroll info, only name can shown on the page.
+
+### Build settings
+markdown: kramdown
+# highlighter: pygments
+kramdown:
+        input: GFM
+        syntax_highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5

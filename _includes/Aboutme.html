@@ -1,0 +1,26 @@
+<div class="sidebar-module about">
+  <h4>{{ site.locales[site.default_locale].Aboutme }}</h4>
+  <img title="{{site.author}}" src="{{site.aboutme_photo}}" alt="{{site.author}}"/>
+  <span>{{site.aboutme}}</span>
+  <br />
+
+  {% if site.ShowContactInfo == "True" %}
+
+  Puedes contactarme a través de:<br>
+
+  {% if site.email != empty %}
+  <a href="mailto:{{site.email}}" title="mailto: {{site.email}}">Email</a> /
+  {% endif %}
+  {% if site.instagram_username != empty %}
+  <a href="https://instagram.com/{{site.instagram_username}}" title="InstagramID: {{site.instagram_username}}">Instagram</a> /
+  {% endif %}
+  {% if site.twitter_username != empty %}
+  <a href="https://twitter.com/{{site.twitter_username}}" title="TwitterID: {{site.twitter_username}}">Twitter</a> /
+  {% endif %}
+  {% if site.youtube_username != empty %}
+  <a href="https://youtube.com/channel/{{site.youtube_username}}" title="YoutubeID: {{site.youtube_username}}">Youtube</a>
+  {% endif %}
+
+  {% endif %}
+
+</div>
